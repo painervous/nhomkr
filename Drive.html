@@ -1,0 +1,134 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf8"/>
+            <style>
+                body {background:url('a0cec6fc500bb50cea5a7495e32d3a64.jpg');-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;transition: all 1.0s ease;
+                background-repeat: no-repeat;
+                background-size: cover;}
+            * {
+                margin: 0;
+                padding: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: 'Times New Roman', Times, serif;
+                color: #298a5b;
+              }
+              #menu ul {
+                 background: #000000;
+                 list-style-type: none;
+                 text-align: center;
+            }
+            #menu li {
+                color: #f1f1f1;
+                 display: inline-block;
+                 width: 120px;
+                height: 40px;
+                 line-height: 40px;
+                 margin-left: -5px;
+                }
+                #menu a {
+                  text-decoration: none;
+                 color: #fff;
+                 display: block;
+                }
+                #menu a:hover {
+                background: #F1F1F1;
+                 color: #333;
+                }
+                #top-up {
+                    font-size: 3rem;
+                    cursor: pointer;
+                    position: fixed;
+                    z-index: 9999;
+                    color:#009358;
+                    bottom: 20px;
+                    right: 15px;
+                    display: none;
+                }
+                #top-up:hover {
+                color: #2abebe
+                }
+                img.center{
+                    display:inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 800px;
+                }
+            </style>
+            <script type="text/javascript">
+                var num;
+                var temp=0;
+                var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+                var preloads=[];
+                /* add any number of images here */
+                preload(
+                'a0cec6fc500bb50cea5a7495e32d3a64.jpg',
+                '131b604f5a3d41d0c3d3e2e050b65a22.jpg',
+                );
+                function preload(){
+                for(var c=0;c<arguments.length;c++) {
+                preloads[preloads.length]=new Image();
+                preloads[preloads.length-1].src=arguments[c];
+                }
+                }
+                function rotateImages() {
+                num=Math.floor(Math.random()*preloads.length);
+                if(num==temp){
+                rotateImages();
+                }
+                else{
+                document.body.style.backgroundImage='url('+preloads[num].src+')';
+                temp=num;
+                setTimeout(function(){rotateImages()},speed);
+                }
+                }
+                
+                if(window.addEventListener){
+                window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+                }
+                else {
+                if(window.attachEvent){
+                window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+                }
+                }
+                </script>
+        </head>
+        <body>
+            <div id="menu">
+                <ul>
+                <li><a href="#">Host</a></li>
+                <li><a href="#">Kamen rider</a></li>
+                <li><a href="#">Tier list</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Tokusatsu</a></li>
+                </ul>
+            </div></br>
+            <h1>Kamen rider Drive</h1>
+            <img style="display: block;  margin-left: auto;  margin-right: auto;  width: 300;" width="300px" src="321425d6bc9b3bccf625e74b8247b838.jpg">
+            Kamen Rider Drive (仮面ライダードライブ Kamen Raidā Doraibu?) là một bộ phim truyền hình Nhật Bản thuộc thể loại tokusatsu, phần thứ 16 trong thời kì Heisei, phần thứ 25 của loạt phim. Sanjo Riku trở lại với Kamen Rider Series và làm biên kịch, với Tasaki Ryuta là đạo diễn. Phim được công chiếu lần đầu trên TV Asahi và chiếu trên toàn quốc vào 5 tháng 10 năm 2014, tiếp diễn màn kết của bộ trước là Kamen Rider Gaim, và kết hợp với Ressha Sentai ToQger và Shuriken Sentai Ninninger trong Super Hero Time
+            <p>Cốt truyện</p>
+            6 tháng trước, trên thế giới xảy ra một hiện tượng kì lạ mang tên "Global Freeze" (Đóng băng toàn cầu). Các Roidmude xuất hiện và hủy diệt các thành phố ở Nhật Bản nhưng được những thiết bị trông như những chiếc xe đồ chơi gọi là "Shift Car" ngăn chặn. Hiện tượng này đã dấy lên nỗi lo sợ cho người dân, và họ gọi hiện tượng đó là "Biến động trọng lực". 6 tháng sau, Tomari Shinnosuke - một cảnh sát - tình cờ nhận được một chiếc thắt lưng kì lạ biết nói có tên Drive Driver. Với sự trợ giúp của Drive Driver và những Shift Car, những chiếc xe tí hon có thể đả bại Roidmude, Shinnosuke trở thành Kamen Rider Drive và thực hiện nhiệm vụ giải cứu thế giới.
+            <footer>
+                <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&theta;;</a></div>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+var offset = 500;
+var duration = 750;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+        </script>
+        <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i></div>
+            </footer>
+        </body>
+    </html>

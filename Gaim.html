@@ -1,0 +1,134 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf8"/>
+            <style>
+                body {background:url('a0cec6fc500bb50cea5a7495e32d3a64.jpg');-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;transition: all 1.0s ease;
+                background-repeat: no-repeat;
+                background-size: cover;}
+            * {
+                margin: 0;
+                padding: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: 'Times New Roman', Times, serif;
+                color: #298a5b;
+              }
+              #menu ul {
+                 background: #000000;
+                 list-style-type: none;
+                 text-align: center;
+            }
+            #menu li {
+                color: #f1f1f1;
+                 display: inline-block;
+                 width: 120px;
+                height: 40px;
+                 line-height: 40px;
+                 margin-left: -5px;
+                }
+                #menu a {
+                  text-decoration: none;
+                 color: #fff;
+                 display: block;
+                }
+                #menu a:hover {
+                background: #F1F1F1;
+                 color: #333;
+                }
+                #top-up {
+                    font-size: 3rem;
+                    cursor: pointer;
+                    position: fixed;
+                    z-index: 9999;
+                    color:#009358;
+                    bottom: 20px;
+                    right: 15px;
+                    display: none;
+                }
+                #top-up:hover {
+                color: #2abebe
+                }
+                img.center{
+                    display:inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 800px;
+                }
+            </style>
+            <script type="text/javascript">
+                var num;
+                var temp=0;
+                var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+                var preloads=[];
+                /* add any number of images here */
+                preload(
+                'a0cec6fc500bb50cea5a7495e32d3a64.jpg',
+                '131b604f5a3d41d0c3d3e2e050b65a22.jpg',
+                );
+                function preload(){
+                for(var c=0;c<arguments.length;c++) {
+                preloads[preloads.length]=new Image();
+                preloads[preloads.length-1].src=arguments[c];
+                }
+                }
+                function rotateImages() {
+                num=Math.floor(Math.random()*preloads.length);
+                if(num==temp){
+                rotateImages();
+                }
+                else{
+                document.body.style.backgroundImage='url('+preloads[num].src+')';
+                temp=num;
+                setTimeout(function(){rotateImages()},speed);
+                }
+                }
+                
+                if(window.addEventListener){
+                window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+                }
+                else {
+                if(window.attachEvent){
+                window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+                }
+                }
+                </script>
+        </head>
+        <body>
+            <div id="menu">
+                <ul>
+                <li><a href="#">Host</a></li>
+                <li><a href="#">Kamen rider</a></li>
+                <li><a href="#">Tier list</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Tokusatsu</a></li>
+                </ul>
+            </div></br>
+            <h1>Kamen rider Gaim</h1>
+            <img style="display: block;  margin-left: auto;  margin-right: auto;  width: 300;" width="300px" src="78e017abd8d1edcbc7e9c488a2cde928.jpg">
+            Kamen Rider Gaim (仮面ライダー鎧武ガイム Kamen Raidā Gaimu?) là series tokusatsu thứ 24 của loạt phim Kamen Rider Series và thứ 15 trong thời Heisei[2] của Toei Company. Kamen Rider Gaim được Toei đăng ký thương hiệu vào ngày 20 tháng 5 năm 2013.[3]. Buổi họp báo ra mắt bộ phim được tổ chức vào ngày 25 tháng 7, 2013[4]. Kamen Rider Gaim lên sóng trong giờ phim Super Hero Time của TV Asahi vào ngày 6 tháng 10, 2013 cùng với 2 series Super Sentai là Zyuden Sentai Kyoryuger[5] và sau đó là Ressha Sentai ToQger. Slogan của phim là "Rider chiến quốc". Motif của Kamen Rider Gaim là samurai và trái cây[2][5].
+            <p>Cốt truyện</p>
+            Tại một thành phố mới nổi nằm dưới tầm ảnh hưởng của một tập đoàn mang tên Yggdrasill Corporation (ユグドラシルコーポレーション Yugudorashiru Kōporēshon?), thanh niên lập nên những nhóm nhảy đường phố để quên đi thời gian. Họ cũng sử dụng những quái vật mini đến từ những chiều không gian khác tên là Inves (インベス Inbesu?) để tổ chức những cuộc đấu bí mật. Tuy nhiên, cánh cổng không gian cũng có thể đưa đến những quái vật lớn hơn, và Kazuraba Kouta - Kamen Rider Gaim và là nhân vật chính của phim, một thanh niên thất nghiệp đã vô tình tìm thấy dụng cụ Hensin là một cái driver và một ổ khóa mang hình quả cam khi đi qua cánh cổng không gian, sử dụng sức mạnh vừa nhận được để chiến đấu với lũ quái vật, quyết định trở thành anh hùng chiến đấu với chúng.[1][2][6]
+            <footer>
+                <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&theta;;</a></div>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+var offset = 500;
+var duration = 750;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+        </script>
+        <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i></div>
+            </footer>
+        </body>
+    </html>

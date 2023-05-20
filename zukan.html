@@ -1,0 +1,152 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf8"/>
+            <style>
+                body {background:url('a0cec6fc500bb50cea5a7495e32d3a64.jpg');-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;transition: all 1.0s ease;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;}
+            * {
+                margin: 0;
+                padding: 0;
+                ;
+                
+                font-family: 'Times New Roman', Times, serif;
+                color: #298a5b;
+              }
+              #menu ul {
+                 background: #000000;
+                 list-style-type: none;
+                 text-align: center;
+            }
+            #menu li {
+                color: #f1f1f1;
+                 display: inline-block;
+                 width: 120px;
+                height: 40px;
+                 line-height: 40px;
+                 margin-left: -5px;
+                }
+                #menu a {
+                  text-decoration: none;
+                 color: #fff;
+                 display: block;
+                }
+                #menu a:hover {
+                background: #F1F1F1;
+                 color: #333;
+                }
+                #top-up {
+                    font-size: 3rem;
+                    cursor: pointer;
+                    position: fixed;
+                    z-index: 9999;
+                    color:#009358;
+                    bottom: 20px;
+                    right: 15px;
+                    display: none;
+                }
+                #top-up:hover {
+                color: #2abebe
+                }
+                img.center{
+                    display:inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 800px;
+                }
+            </style>
+            <script type="text/javascript">
+                var num;
+                var temp=0;
+                var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+                var preloads=[];
+                /* add any number of images here */
+                preload(
+                'a0cec6fc500bb50cea5a7495e32d3a64.jpg',
+                '131b604f5a3d41d0c3d3e2e050b65a22.jpg',
+                );
+                function preload(){
+                for(var c=0;c<arguments.length;c++) {
+                preloads[preloads.length]=new Image();
+                preloads[preloads.length-1].src=arguments[c];
+                }
+                }
+                function rotateImages() {
+                num=Math.floor(Math.random()*preloads.length);
+                if(num==temp){
+                rotateImages();
+                }
+                else{
+                document.body.style.backgroundImage='url('+preloads[num].src+')';
+                temp=num;
+                setTimeout(function(){rotateImages()},speed);
+                }
+                }
+                
+                if(window.addEventListener){
+                window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+                }
+                else {
+                if(window.attachEvent){
+                window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+                }
+                }
+                </script>
+        </head>
+        <body>
+            <div id="menu">
+                <ul>
+                <li><a href="#">Host</a></li>
+                <li><a href="#">Kamen rider</a></li>
+                <li><a href="#">Tier list</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Tokusatsu</a></li>
+                </ul>
+            </div></br>
+            <div>
+                <div>
+            <ol>
+                <li><a href="decade.html" target="_blank"><img style="width: 200px;" src="Icon-decade.webp"/></li>
+                <li><a href="W.html" target="_blank"><img style="width: 200px;" src="Icon-w.webp"/></li>
+                <li><a href="OOO.html" target="_blank"><img style="width: 200px;" src="Icon-ooo.webp"/></li>
+                <li><a href="Fourze.html" target="_blank"><img style="width: 200px;" src="Icon-fourze.webp"/></li>
+                <li><a href="Wizard.html" target="_blank"><img style="width: 200px;" src="Icon-wizard.webp"/></li>
+                <li><a href="Gaim.html" target="_blank"><img style="width: 200px;" src="Icon-gaim.webp"/></li>
+                <li><a href="Drive.html" target="_blank"><img style="width: 200px;" src="Icon-drive.webp"/></li>
+                <li><a href="Ghost.html" target="_blank"><img style="width: 200px;" src="Icon-ghost.webp"/></li>
+                <li><a href="Ex-aid.html" target="_blank"><img style="width: 200px;" src="Icon-ex-aid.webp"/></li>
+                <li><a href="Build.html" target="_blank"><img style="width: 200px;" src="Icon-build.webp"/></li>
+                <li><a href="Zi-o.html" target="_blank"><img style="width: 200px;" src="Icon-zi-o.webp"/></li>
+                <li><a href="Zero-one.html" target="_blank"><img style="width: 200px;" src="Icon-zero-one.webp"/></li>
+                <li><a href="Saber.html" target="_blank"><img style="width: 200px;" src="Icon-saber.webp"/></li>
+                <li><a href="Revice.html" target="_blank"><img style="width: 200px;" src="Icon-revice.webp"/></li>
+                <li><a href="Icon-geats.webp" target="_blank"><img style="width: 200px;" src="Icon-geats.webp"/></li>
+            </ol>
+            </div>
+            </div>
+
+            <footer>
+                <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&theta;;</a></div>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+var offset = 500;
+var duration = 750;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+        </script>
+        <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i></div>
+            </footer>
+        </body>
+    </html>

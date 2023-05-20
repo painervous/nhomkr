@@ -1,0 +1,134 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf8"/>
+            <style>
+                body {background:url('a0cec6fc500bb50cea5a7495e32d3a64.jpg');-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;transition: all 1.0s ease;
+                background-repeat: no-repeat;
+                background-size: cover;}
+            * {
+                margin: 0;
+                padding: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: 'Times New Roman', Times, serif;
+                color: #298a5b;
+              }
+              #menu ul {
+                 background: #000000;
+                 list-style-type: none;
+                 text-align: center;
+            }
+            #menu li {
+                color: #f1f1f1;
+                 display: inline-block;
+                 width: 120px;
+                height: 40px;
+                 line-height: 40px;
+                 margin-left: -5px;
+                }
+                #menu a {
+                  text-decoration: none;
+                 color: #fff;
+                 display: block;
+                }
+                #menu a:hover {
+                background: #F1F1F1;
+                 color: #333;
+                }
+                #top-up {
+                    font-size: 3rem;
+                    cursor: pointer;
+                    position: fixed;
+                    z-index: 9999;
+                    color:#009358;
+                    bottom: 20px;
+                    right: 15px;
+                    display: none;
+                }
+                #top-up:hover {
+                color: #2abebe
+                }
+                img.center{
+                    display:inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 800px;
+                }
+            </style>
+            <script type="text/javascript">
+                var num;
+                var temp=0;
+                var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+                var preloads=[];
+                /* add any number of images here */
+                preload(
+                'a0cec6fc500bb50cea5a7495e32d3a64.jpg',
+                '131b604f5a3d41d0c3d3e2e050b65a22.jpg',
+                );
+                function preload(){
+                for(var c=0;c<arguments.length;c++) {
+                preloads[preloads.length]=new Image();
+                preloads[preloads.length-1].src=arguments[c];
+                }
+                }
+                function rotateImages() {
+                num=Math.floor(Math.random()*preloads.length);
+                if(num==temp){
+                rotateImages();
+                }
+                else{
+                document.body.style.backgroundImage='url('+preloads[num].src+')';
+                temp=num;
+                setTimeout(function(){rotateImages()},speed);
+                }
+                }
+                
+                if(window.addEventListener){
+                window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+                }
+                else {
+                if(window.attachEvent){
+                window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+                }
+                }
+                </script>
+        </head>
+        <body>
+            <div id="menu">
+                <ul>
+                <li><a href="#">Host</a></li>
+                <li><a href="#">Kamen rider</a></li>
+                <li><a href="#">Tier list</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Tokusatsu</a></li>
+                </ul>
+            </div></br>
+            <h1>Kamen rider Wizard</h1>
+            <img style="display: block;  margin-left: auto;  margin-right: auto;  width: 300;" width="300px" src="17401ca87392e4c7d5139cd9ff026cd0.jpg">
+            Kamen Rider Wizard (仮面ライダーウィザード Kamen Raidā Wizādo?) là một loạt phim truyền hình thuộc thể loại Tokusatsu của Toei Company, là series thứ 23 của loạt phim Kamen Rider Series và thứ 14 trong thời Heisei. Tên của bộ phim và logo đã được Toei hé lộ ngày 21 tháng 6, 2012. Bộ phim bắt đầu phát sóng từ ngày 2 tháng 9, 2012, nằm trong khung giờ Super Hero Time cùng với Tokumei Sentai Go-Busters và Zyuden Sentai Kyoryuger. Khẩu hiệu của bộ phim là "Nào, showtime!" (さあ、ショ－タイムだ! Saa, shōtaimu da!?).
+            <p>Cốt truyện</p>
+            Một nghi lễ bí ẩn diễn ra vào một ngày nhật thực đã tạo ra một nhóm sinh vật ma quỷ gọi là Phantom. Souma Haruto, một người sống sót trong nghi lễ, đã được Bạch Ma Pháp Sư lựa chọn làm Kamen Rider Wizard chiến đấu chống lại Phantoms cùng với Koyomi- một nạn nhân khác của Phantom, cảnh sát Daimon Rinko, chàng trai mê phép thuật Nara Shunpei và người làm ra Wizard rings Wajima.
+            <footer>
+                <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&theta;;</a></div>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+var offset = 500;
+var duration = 750;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+        </script>
+        <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i></div>
+            </footer>
+        </body>
+    </html>

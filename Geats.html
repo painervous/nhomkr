@@ -1,0 +1,134 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf8"/>
+            <style>
+                body {background:url('a0cec6fc500bb50cea5a7495e32d3a64.jpg');-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;transition: all 1.0s ease;}
+            * {
+                margin: 0;
+                padding: 0;
+                background-repeat: no-repeat;
+                background-size: contain;
+                font-family: 'Times New Roman', Times, serif;
+                color: #298a5b;
+              }
+              #menu ul {
+                 background: #000000;
+                 list-style-type: none;
+                 text-align: center;
+            }
+            #menu li {
+                color: #f1f1f1;
+                 display: inline-block;
+                 width: 120px;
+                height: 40px;
+                 line-height: 40px;
+                 margin-left: -5px;
+                }
+                #menu a {
+                  text-decoration: none;
+                 color: #fff;
+                 display: block;
+                }
+                #menu a:hover {
+                background: #F1F1F1;
+                 color: #333;
+                }
+                #top-up {
+                    font-size: 3rem;
+                    cursor: pointer;
+                    position: fixed;
+                    z-index: 9999;
+                    color:#009358;
+                    bottom: 20px;
+                    right: 15px;
+                    display: none;
+                }
+                #top-up:hover {
+                color: #2abebe
+                }
+                img.center{
+                    display:inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 800px;
+                }
+            </style>
+            <script type="text/javascript">
+                var num;
+                var temp=0;
+                var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+                var preloads=[];
+                /* add any number of images here */
+                preload(
+                'a0cec6fc500bb50cea5a7495e32d3a64.jpg',
+                '131b604f5a3d41d0c3d3e2e050b65a22.jpg',
+                );
+                function preload(){
+                for(var c=0;c<arguments.length;c++) {
+                preloads[preloads.length]=new Image();
+                preloads[preloads.length-1].src=arguments[c];
+                }
+                }
+                function rotateImages() {
+                num=Math.floor(Math.random()*preloads.length);
+                if(num==temp){
+                rotateImages();
+                }
+                else{
+                document.body.style.backgroundImage='url('+preloads[num].src+')';
+                temp=num;
+                setTimeout(function(){rotateImages()},speed);
+                }
+                }
+                
+                if(window.addEventListener){
+                window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+                }
+                else {
+                if(window.attachEvent){
+                window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+                }
+                }
+                </script>
+        </head>
+        <body>
+            <div id="menu">
+                <ul>
+                <li><a href="#">Host</a></li>
+                <li><a href="#">Kamen rider</a></li>
+                <li><a href="#">Tier list</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Tokusatsu</a></li>
+                </ul>
+            </div></br>
+            <h1>Kamen rider Geats(đang công chiếu)</h1>
+            <img style="display: block;  margin-left: auto;  margin-right: auto;  width: 300;" width="300px" src="56b139a784e6ba1ee02edc0ca37a4eb9.jpg">
+            Kamen Rider Geats (仮面ライダーギーツ Kamen Raidā Gītsu?) là một bộ phim truyền hình tokusatsu của Nhật Bản, đây tác phẩm thứ 33 của loạt phim Kamen Rider do Công ty Toei sản xuất và là bộ thứ tư ra mắt trong thời kỳ Reiwa. Bộ phim lên sóng từ ngày 4 tháng 9 năm 2022, chiếu song song với Avataro Sentai Donbrothers trong khung giờ Super Hero Time sau khi kết thúc Kamen Rider Revice.
+            <p>Cốt truyện</p>
+            Desire Grand Prix (デザイアグランプリ Dezaia Guran Puri?) là một trò chơi sinh tồn thực tế, nơi người chơi bảo vệ sự bình yên của thành phố khỏi sự đe dọa của một kẻ thù bí ẩn được gọi là "Jyamato". Mỗi người tham gia sử dụng một Rider ID Core (ライダーIDコア Raidā Aidī Koa?) và một trong hai nửa của Raise Buckle (ライスバクル Raisu Bakuru?) trở thành Kamen Rider và cạnh tranh để giành chiến thắng trong trò chơi bằng cách đánh bại kẻ thù và cứu người. Người chiến thắng Desire Grand Prix sẽ được thưởng "quyền được thực hiện thế giới lý tưởng của riêng mình". Nói cách khác, chỉ những anh hùng thực sự chiến thắng cuộc thi mới có thể tạo ra thế giới mà họ mong ước.
+
+
+            <footer>
+                <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&theta;;</a></div>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+var offset = 500;
+var duration = 750;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+        </script>
+        <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i></div>
+            </footer>
+        </body>
+    </html>
